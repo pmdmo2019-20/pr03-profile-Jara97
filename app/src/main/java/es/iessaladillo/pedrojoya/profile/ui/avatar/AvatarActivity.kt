@@ -200,7 +200,19 @@ class AvatarActivity : AppCompatActivity() {
     }
 
     private fun checkImage() {
-        checkImg1.isChecked = true
+        val img:Int=ProfileViewModel.avatar.value?.id?:1
+        when (img) {
+            1 -> checkImg1.isChecked=true
+            2 -> checkImg4.isChecked=true
+            3 -> checkImg7.isChecked=true
+            4 -> checkImg2.isChecked=true
+            5 -> checkImg5.isChecked=true
+            6 -> checkImg8.isChecked=true
+            7 -> checkImg3.isChecked=true
+            8 -> checkImg6.isChecked=true
+            9 -> checkImg9.isChecked=true
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -216,6 +228,7 @@ class AvatarActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
 
     companion object {
 

@@ -35,6 +35,7 @@ class ProfileActivity : AppCompatActivity() {
         // TODO
     }
 
+
     override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
         super.onRestoreInstanceState(savedInstanceState)
         setData()

@@ -47,7 +47,6 @@ class ProfileViewModel() : ViewModel(){
         this.web=web
     }
 
-
     fun changeAvatar(id:Int):Avatar{
         return queryAllAvatars().get(id)
     }
@@ -58,6 +57,8 @@ companion object{
          this.avatar.value=avatar
     }
 }
+
+
 
 
 
