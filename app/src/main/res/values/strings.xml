@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Profile</string>
     <string name="avatar_title">Select Avatar</string>
+    <string name="avatar_select">Select Avatar</string>
     <string name="profile_title">User profile</string>
+    <string name="profile_save">User profile</string>
+    <string name="profile_invalid_email">Invalid email</string>
+    <string name="profile_invalid_phonenumber">Invalid Phone</string>
+    <string name="profile_invalid_name">Name is required</string>
+    <string name="profile_invalid_address">Adress is required</string>
+    <string name="profile_invalid_web">Invalid Url</string>
 </resources>

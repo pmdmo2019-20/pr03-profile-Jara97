@@ -1,5 +1,6 @@
 package es.iessaladillo.pedrojoya.profile.utils
 
+import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -13,6 +14,11 @@ fun isActivityAvailable(ctx: Context, intent: Intent): Boolean {
         PackageManager.MATCH_DEFAULT_ONLY
     )
     return appList.size > 0
+}
+
+fun newWebSearchIntent(text: String): Intent {
+    return Intent(Intent.ACTION_WEB_SEARCH)
+        .putExtra(SearchManager.QUERY, text)
 }
 
 fun newViewUriIntent(uri: Uri): Intent {

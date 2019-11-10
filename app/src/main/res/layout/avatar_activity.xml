@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:id="@+id/checkImg1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:checked="false"
+        android:drawableBottom="@drawable/pikachu"
+        app:layout_constraintBottom_toTopOf="@+id/checkImg4"
+        app:layout_constraintEnd_toStartOf="@+id/checkImg2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkImg3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/gyarados"
+        app:layout_constraintBottom_toTopOf="@+id/checkImg6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkImg2"
+        app:layout_constraintTop_toTopOf="@+id/checkImg2" />
+
+    <CheckBox
+        android:id="@+id/checkImg2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/cubone"
+        app:layout_constraintBottom_toTopOf="@+id/checkImg5"
+        app:layout_constraintEnd_toStartOf="@+id/checkImg3"
+        app:layout_constraintStart_toEndOf="@+id/checkImg1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/checkImg4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:checked="false"
+        android:drawableBottom="@drawable/bulbasur"
+        app:layout_constraintBottom_toTopOf="@+id/checkImg7"
+        app:layout_constraintEnd_toStartOf="@+id/checkImg5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkImg1" />
+
+    <CheckBox
+        android:id="@+id/checkImg5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:drawableBottom="@drawable/feebas"
+        app:layout_constraintBottom_toTopOf="@+id/checkImg8"
+        app:layout_constraintEnd_toStartOf="@+id/checkImg6"
+        app:layout_constraintStart_toEndOf="@+id/checkImg4"
+        app:layout_constraintTop_toTopOf="@+id/checkImg4" />
+
+    <CheckBox
+        android:id="@+id/checkImg6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/jigglypuff"
+        app:layout_constraintBottom_toTopOf="@+id/checkImg9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkImg5"
+        app:layout_constraintTop_toTopOf="@+id/checkImg4" />
+
+
+    <CheckBox
+        android:id="@+id/checkImg7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:checked="false"
+        android:drawableBottom="@drawable/chikorita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkImg8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkImg4" />
+
+    <CheckBox
+        android:id="@+id/checkImg8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/giratina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkImg9"
+        app:layout_constraintStart_toEndOf="@+id/checkImg7"
+        app:layout_constraintTop_toTopOf="@+id/checkImg7" />
+
+    <CheckBox
+        android:id="@+id/checkImg9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:drawableBottom="@drawable/pachirisu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkImg8"
+        app:layout_constraintTop_toTopOf="@+id/checkImg7" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

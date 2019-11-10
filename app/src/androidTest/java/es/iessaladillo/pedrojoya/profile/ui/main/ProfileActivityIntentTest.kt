@@ -52,18 +52,18 @@ class ProfileActivityIntentTest {
 
     @Test
     fun shouldPhonenumberSendIntent() {
-        onView(withId(R.id.txtPhonenumber)).perform(typeText("666666666"), closeSoftKeyboard())
-        onView(withId(R.id.imgPhonenumber)).perform(click())
+        onView(withId(R.id.txtPhone)).perform(typeText("666666666"), closeSoftKeyboard())
+        onView(withId(R.id.imgPhone)).perform(click())
         intended(Matchers.allOf(hasAction(Intent.ACTION_DIAL), hasData("tel:666666666")))
     }
 
     @Test
     fun shouldAddressSendIntent() {
-        onView(withId(R.id.txtAddress)).perform(
+        onView(withId(R.id.txtAdress)).perform(
             typeText("Avda. Duque de Rivas"),
             closeSoftKeyboard()
         )
-        onView(withId(R.id.imgAddress)).perform(click())
+        onView(withId(R.id.imgAdress)).perform(click())
         intended(
             Matchers.allOf(
                 hasAction(Intent.ACTION_VIEW),
@@ -115,7 +115,7 @@ class ProfileActivityIntentTest {
         onView(withId(R.id.imgAvatar)).perform(click())
         // Check result set to views.
         onView(withId(R.id.imgAvatar))
-            .check(matches(DrawableMatcher(avatar.imageResId)))
+            .check(matches(DrawableMatcher(avatar.drawable)))
         onView(withId(R.id.lblAvatar)).check(
             matches(withText(avatar.name))
         )

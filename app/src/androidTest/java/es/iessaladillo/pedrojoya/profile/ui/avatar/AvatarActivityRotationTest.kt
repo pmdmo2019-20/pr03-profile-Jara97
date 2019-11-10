@@ -38,9 +38,9 @@ class AvatarActivityRotationTest {
 
     @Test
     fun shouldHaveSameAvatarSelectedAfterRotation() {
-        onView(withId(R.id.imgAvatar2)).perform(click())
+        onView(withId(R.id.checkImg2)).perform(click())
         Rotation.rotateScreen(testRule.activity)
-        onView(withId(R.id.chkAvatar2)).check(matches(isChecked()))
+        onView(withId(R.id.checkImg2)).check(matches(isChecked()))
     }
 
 }

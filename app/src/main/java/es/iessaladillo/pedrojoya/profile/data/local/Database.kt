@@ -21,4 +21,5 @@ object Database {
 
     fun queryAllAvatars(): List<Avatar> = ArrayList(avatars)
 
+
 }
